@@ -7,8 +7,8 @@ img.src = "plan1.png";
 img.onload = function imageOnLoad() {
 
     context.drawImage(img, 0, 0);
-    console.log(context.getImageData(0,0, 100, 100));
-    var imageData = context.getImageData(0,0, 100, 100);
+    console.log(context.getImageData(0,0, img.width, img.height));
+    var imageData = context.getImageData(0,0, img.width, img.height);
     var red = 150,
         green = 255,
         blue = 40;
